@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payments - Howardhome</title>
+    <style>
+        body { background:#f5f5f5; font-family:Arial; }
+        .payment-box {
+            background:white; padding:20px; border-radius:10px;
+            max-width:400px; margin:40px auto;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width:100%; padding:10px; margin-top:10px;
+            border-radius:8px; border:1px solid #ccc;
+        }
+        button {
+            margin-top:15px; padding:10px; width:100%;
+            background:#007bff; color:white; border:none;
+            border-radius:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav style="background:white; padding:10px; border-radius:8px; margin-bottom:20px;">
+    <ul style="display:flex; gap:20px; list-style:none;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+    </ul>
+</nav>
+
+<div class="payment-box">
+    <h2 style="text-align:center;">Payment Portal</h2>
+    <input type="text" placeholder="Tenant Name">
+    <input type="text" placeholder="Property Address">
+    <input type="number" placeholder="Amount (USD)">
+    <select>
+        <option>Rent</option>
+        <option>Deposit</option>
+        <option>Late Fee</option>
+    </select>
+    <button onclick="alert('Payment processed (demo).')">Pay Now</button>
+</div>
+
+</body>
+</html>
